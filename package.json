@@ -1,0 +1,30 @@
+{
+  "name": "aws-gameday",
+  "version": "1.0.0",
+  "description": "AWS GameDay - Unicorn.Rental",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "author": "Julio Lozovei <jlozovei@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/register": "^7.4.0",
+    "babel-loader": "^8.0.5",
+    "cssnano": "^4.1.10",
+    "gh-pages": "^2.0.1",
+    "gulp": "^4.0.0",
+    "gulp-connect": "^5.7.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "postcss-custom-properties": "^8.0.9",
+    "postcss-custom-selectors": "^5.1.2",
+    "postcss-preset-env": "^6.6.0",
+    "precss": "^4.0.0",
+    "rucksack-css": "^1.0.2"
+  }
+}

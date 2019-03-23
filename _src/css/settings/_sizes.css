@@ -1,0 +1,22 @@
+/*
+*
+* Grid Sizes
+*
+*/
+
+$gridWidth: 1120px;
+
+$gridMinWidth: 300px;
+$gridMaxWidth: $gridWidth;
+
+$xs: 467px;
+$m-xs: 468px;
+
+$sm: 767px;
+$m-sm: 768px;
+
+$md: 991px;
+$m-md: 992px;
+
+$lg: 1199px;
+$m-lg: 1200px;

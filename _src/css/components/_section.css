@@ -1,0 +1,76 @@
+body {
+  background-color: $shark;
+  background-image: linear-gradient(-15deg, $mine_shaft, $shark, $medium, $heliotrope);
+  background-size: 400%;
+  background-position: 100% 100%;
+  animation: backgrounds linear 10s infinite;
+  animation-fill-mode: backwards;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+
+  &--unicorn {
+    .image,
+    .text h1,
+    .text blockquote {
+      opacity: 0;
+      transition: opacity ease-in-out 300ms;
+    }
+
+    .image{
+      position: relative;
+      padding: 1rem 0;
+
+      &.loaded{
+        opacity: 1;
+        transition-delay: 300ms;
+
+        & + .text{
+          h1,
+          blockquote {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .text{
+      text-align: center;
+
+      h1 {
+        font-size: responsive 1.875rem 2.75rem;
+        font-range: $gridMinWidth $gridMaxWidth;
+        line-height: 1.32;
+        color: $white;
+        letter-spacing: 1px;
+        text-decoration: line-through;
+        transition-delay: 580ms;
+      }
+
+      blockquote {
+        margin: 2rem 0;
+        padding: 0 .875rem;
+        border-left: .125rem solid $porcelain;
+        border-radius: 3px;
+        font-size: responsive .875rem 1.125rem;
+        font-range: $gridMinWidth $gridMaxWidth;
+        line-height: 1.63;
+        color: $porcelain;
+        transition-delay: 820ms;
+      }
+    }
+  }
+}
+
+@keyframes backgrounds {
+  0%, 100% { background-position: 100% 100%; }
+  50% { background-position: 0 0; }
+}
